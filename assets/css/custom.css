@@ -330,19 +330,24 @@ p {
 }
 
 .navbar-header {
-    background: #A70303;
+    border-bottom: 1px solid #e7e7e7;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #B40101;
+    background-color: #12457d;
+    color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #fff;
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #fff;
+    border-color: #12457d;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #FFF;
+    background-color: #12457d;
 }
 
 .nav > li > a > i {
