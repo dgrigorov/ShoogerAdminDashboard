@@ -22,7 +22,7 @@ body {
 
 #page-inner {
     width: 100%;
-    min-height: 1200px;
+    /*min-height: 1200px;*/
 }
 
 .text-center {
@@ -593,7 +593,7 @@ aside {
     border-radius: 0;
 }
 
-.subscribers .pull-right a {
+.subscribers .header a {
     background-color: #2766ac;
     border-radius: 2px;
     color: #fff !important;
@@ -606,3 +606,100 @@ aside {
 .hour {
     color: #929191;
 }
+
+.nav-tabs li {
+    z-index: 2;
+}
+
+    .nav-tabs li:nth-child(2) {
+        border: 1px solid #ddd;
+        z-index: 1;
+        margin-left: -10px;
+        border-bottom: 0;
+        border-top-right-radius: 4px;
+    }
+
+        .nav-tabs li:nth-child(2) a {
+            color: #929191;
+        }
+
+button.fc-prev-button,
+button.fc-next-button {
+    background: none;
+    border: 0;
+    color: #fff;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.fc-icon-left-single-arrow:after {
+    content: "\f053";
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-size: 40px;
+}
+
+.fc-icon-right-single-arrow:after {
+    content: "\f052";
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-size: 40px;
+}
+
+.fc-today-button,
+.fc-month-button.fc-state-active,
+.fc-basicWeek-button.fc-state-active,
+.fc-basicDay-button.fc-state-active {
+    border-radius: 3px !important;
+    background: #e2e1e1 !important;
+    color: #7c7c7c !important;
+    font-weight: 700;
+    box-shadow: 0 3px 0 #7c7c7c !important;
+}
+
+.fc-right .fc-button-group .fc-state-default {
+    margin-right: 6px !important;
+}
+.fc-month-button,
+.fc-basicWeek-button,
+.fc-basicDay-button {
+    border-radius: 3px !important;
+    background: #2766ac !important;
+    color: #fff !important;
+    font-weight: 700;
+    box-shadow: 0 3px 0 #12457d !important;
+    text-shadow: none !important;
+}
+
+.panel-footer.legend p {
+    padding: 2px 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+    .panel-footer.legend p:first-child {
+        font-weight: 600;
+        color: #000;
+    }
+
+    .panel-footer.legend p.active {
+        background-color: #1369ab;
+    }
+
+    .panel-footer.legend p.paused {
+        background-color: #c4ccd4;
+        background-image: repeating-linear-gradient(140deg, transparent, transparent 3px, rgba(255,255,255,.5) 0, rgba(255,255,255,.5) 9px);
+        color: #000;
+    }
+
+    .panel-footer.legend p.experied {
+        background-color: #73808a;
+    }
+
+    .panel-footer.legend p.pendind {
+        background-color: #ee9e02;
+    }
+
+    .panel-footer.legend p.rejected {
+        background-color: #c24e53;
+    }
