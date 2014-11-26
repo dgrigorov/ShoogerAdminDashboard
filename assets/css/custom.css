@@ -742,7 +742,7 @@ button.fc-next-button {
     width: 55%;
 }
 
-/*input[type="checkbox"] {
+input[type="checkbox"] {
     display:none;
 }
 
@@ -790,7 +790,12 @@ input[type="radio"] + label span {
 input[type="radio"]:checked + label span {
     background:url(../img/check-radio-sprite.png) -46px top no-repeat;
 }
-*/
+
+textarea[name="about"] {
+    height: 130px;
+    resize: none;
+}
+
 .paym-mth label {
     background: url(../img/payment-methods.png) no-repeat 100% 9%;
     width: 55px;
@@ -913,4 +918,32 @@ button.cancel {
     width: 178px;
     border: 1px solid #dae4eb;
     color: #7e7e7e;
+}
+
+/*.selectpicker {
+    background-image: url(../img/dropdown-caret.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.bootstrap-select.open {
+    background-image: url(../img/dropdown-caret.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}*/
+
+.btn.selectpicker {
+    padding: 0 12px;
+    height: 34px;
+}
+
+.selectpicker .fa-caret-down {
+    height: 100%;
+    width: 15%;
+    background: #12457d;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 10px;
 }
