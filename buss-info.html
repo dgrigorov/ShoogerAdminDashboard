@@ -12,6 +12,8 @@
 <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" type="text/css"/>
 <!-- CUSTOM STYLES-->
 <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css"/>
 <!-- GOOGLE FONTS-->
 <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
 <!-- JQUERY STYLES -->
@@ -71,7 +73,7 @@
                         <a href="promos.html"><i class="fa fa-bullhorn"></i> Promos</a>
                     </li>
                     <li>
-                        <a class="active-menu" href="buss-info.html"><i class="fa fa-bullhorn"></i> Business Info</a>
+                        <a class="active-menu" href="buss-info.html"><i class="fa fa-briefcase"></i> Business Info</a>
                     </li>
                     <li>
                         <a href="offers.html"><i class="fa fa-tags"></i> Purchased Offers</a>
@@ -141,118 +143,446 @@
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
                                                 <h3>Business information</h3>
                                                 <div class="col-lg-6">
-                                                    <form class="form-horizontal" role="form">
-                                                        <div class="form-group form-group-sm">
-                                                            <label class="col-sm-3 control-label" for="businessName">Business Name:</label>
-                                                            <div class="col-xs-8">
-                                                                <input class="form-control" type="text" id="businessName" placeholder="Daniel Grigorov" autofocus>
+                                                    <div class="row">
+                                                        <form class="form-horizontal" role="form">
+                                                            <div class="form-group form-group-sm">
+                                                                <label class="col-sm-3 control-label" for="businessName">Business Name:</label>
+                                                                <div class="col-xs-8">
+                                                                    <input class="form-control" type="text" id="businessName" placeholder="Daniel Grigorov" autofocus>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group form-group-sm">
-                                                            <label class="col-sm-3 control-label" for="officePhone">Office Phone:</label>
-                                                            <div class="col-xs-2">
-                                                                <input class="form-control" type="text" id="officePhone">
+                                                            <div class="form-group form-group-sm">
+                                                                <label class="col-sm-3 control-label" for="officePhone">Office Phone:</label>
+                                                                <div class="col-xs-2">
+                                                                    <input class="form-control" type="text" id="officePhone">
+                                                                </div>
+                                                                <div class="col-xs-2">
+                                                                    <input class="form-control" type="text">
+                                                                </div>
+                                                                <div class="col-xs-2">
+                                                                    <input class="form-control" type="text">
+                                                                </div>
+                                                                <div class="col-xs-2">
+                                                                    <input class="form-control" type="text">
+                                                                </div>
                                                             </div>
-                                                            <div class="col-xs-2">
-                                                                <input class="form-control" type="text">
+                                                            <div class="form-group form-group-sm">
+                                                                <label class="col-sm-3 control-label" for="website">Website:</label>
+                                                                <div class="col-xs-8">
+                                                                    <input class="form-control" type="url" id="website">
+                                                                </div>
                                                             </div>
-                                                            <div class="col-xs-2">
-                                                                <input class="form-control" type="text">
+                                                            <div class="form-group form-group-sm">
+                                                                <label class="col-sm-3 control-label" for="pEmail">Public Email:</label>
+                                                                <div class="col-xs-8">
+                                                                    <input class="form-control" type="email" id="pEmail">
+                                                                </div>
                                                             </div>
-                                                            <div class="col-xs-2">
-                                                                <input class="form-control" type="text">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group form-group-sm">
-                                                            <label class="col-sm-3 control-label" for="website">Website:</label>
-                                                            <div class="col-xs-8">
-                                                                <input class="form-control" type="url" id="website">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group form-group-sm">
-                                                            <label class="col-sm-3 control-label" for="pEmail">Public Email:</label>
-                                                            <div class="col-xs-8">
-                                                                <input class="form-control" type="email" id="pEmail">
-                                                            </div>
-                                                        </div>
-                                                    </form>
+                                                        </form>
+                                                    </div>
                                                 </div>
 
                                                 <div class="col-lg-6">
-                                                    <form class="form-horizontal" role="form">
-                                                        <div class="form-group form-group-sm">
-                                                            <label class="col-sm-3 control-label">Primary Locations:</label>
-                                                            <div class="btn-group dropdown-toggle col-xs-8" data-toggle="dropdown">
-                                                                <button class="btn btn-default dropdown-toggle"  data-toggle="dropdown">
-                                                                    <span data-bind="label">All Locations</span>
-                                                                </button>
-                                                                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
-                                                                <ul class="dropdown-menu" role="menu">
-                                                                    <li><a href="#">Today</a></li>
-                                                                    <li><a href="#">Yesterday</a></li>
-                                                                    <li><a href="#">This Week</a></li>
-                                                                    <li><a href="#">Last 7 days</a></li>
-                                                                    <li><a href="#">Last 14 days</a></li>
-                                                                    <li><a href="#">This month</a></li>
-                                                                    <li><a href="#">Last month</a></li>
-                                                                    <li><a href="#">All time</a></li>
-                                                                </ul>
+                                                    <div class="row">
+                                                        <form class="form-horizontal" role="form">
+                                                            <div class="form-group form-group-sm">
+                                                                <label class="col-sm-3 control-label">Primary Locations:</label>
+                                                                <div class="btn-group dropdown-toggle col-xs-8" data-toggle="dropdown">
+                                                                    <button class="btn btn-default dropdown-toggle locations"  data-toggle="dropdown">
+                                                                        <span data-bind="label">All Locations</span>
+                                                                    </button>
+                                                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+                                                                    <ul class="dropdown-menu" role="menu">
+                                                                        <li><a href="#">Today</a></li>
+                                                                        <li><a href="#">Yesterday</a></li>
+                                                                        <li><a href="#">This Week</a></li>
+                                                                        <li><a href="#">Last 7 days</a></li>
+                                                                        <li><a href="#">Last 14 days</a></li>
+                                                                        <li><a href="#">This month</a></li>
+                                                                        <li><a href="#">Last month</a></li>
+                                                                        <li><a href="#">All time</a></li>
+                                                                    </ul>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group form-group-sm">
-                                                            <label class="col-sm-3 control-label" for="officePhone">Office Phone:</label>
-                                                            <div class="col-xs-2">
-                                                                <input class="form-control" type="text" id="officePhone">
+                                                            <div class="form-group form-group-sm">
+                                                                <label class="col-sm-3 control-label" for="officePhone">Address:</label>
+                                                                <div class="col-xs-8">
+                                                                    <textarea name="" id="" rows="3" class="form-control"></textarea>
+                                                                </div>
                                                             </div>
-                                                            <div class="col-xs-2">
-                                                                <input class="form-control" type="text">
+                                                            <div class="form-group form-group-sm">
+                                                                <label class="col-sm-3 control-label">Contry:</label>
+                                                                <div class="btn-group dropdown-toggle col-xs-8" data-toggle="dropdown">
+                                                                    <button class="btn btn-default dropdown-toggle countries"  data-toggle="dropdown">
+                                                                        <span data-bind="label">All Countries</span>
+                                                                    </button>
+                                                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+                                                                    <ul class="dropdown-menu" role="menu">
+                                                                        <li><a href="#">Bulgaria</a></li>
+                                                                        <li><a href="#">Italy</a></li>
+                                                                        <li><a href="#">France</a></li>
+                                                                        <li><a href="#">Spain</a></li>
+                                                                        <li><a href="#">Ecuador</a></li>
+                                                                        <li><a href="#">Bolive</a></li>
+                                                                        <li><a href="#">Argentina</a></li>
+                                                                        <li><a href="#">Ivory Coast</a></li>
+                                                                    </ul>
+                                                                    <label class="col-sm-1 control-label" for="zipCode">ZIP</label>
+                                                                    <div class="col-xs-3">
+                                                                        <input class="form-control" type="text" id="zipCode">
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="col-xs-2">
-                                                                <input class="form-control" type="text">
+                                                            <div class="form-group form-group-sm">
+                                                                <label class="col-sm-3 control-label" for="city">City:</label>
+                                                                <div class="col-xs-4">
+                                                                    <input class="form-control" type="email" id="city">
+                                                                </div>
+                                                                <label class="col-sm-1 control-label" for="state">State:</label>
+                                                                <div class="col-xs-3">
+                                                                    <input class="form-control" type="email" id="state">
+                                                                </div>
                                                             </div>
-                                                            <div class="col-xs-2">
-                                                                <input class="form-control" type="text">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group form-group-sm">
-                                                            <label class="col-sm-3 control-label" for="website">Website:</label>
-                                                            <div class="col-xs-8">
-                                                                <input class="form-control" type="url" id="website">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group form-group-sm">
-                                                            <label class="col-sm-3 control-label" for="pEmail">Public Email:</label>
-                                                            <div class="col-xs-8">
-                                                                <input class="form-control" type="email" id="pEmail">
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-
-                                                <div class="col-lg-2 col-md-6 col-xs-6">
-                                                    <label>Channels:</label>
-                                                    <div class="btn-group dropdown-toggle" data-toggle="dropdown">
-                                                        <button class="btn btn-default dropdown-toggle"  data-toggle="dropdown">
-                                                            <span data-bind="label">All Channels</span>
-                                                        </button>
-                                                        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
-                                                        <ul class="dropdown-menu" role="menu">
-                                                            <li><a href="#">Today</a></li>
-                                                            <li><a href="#">Yesterday</a></li>
-                                                            <li><a href="#">This Week</a></li>
-                                                            <li><a href="#">Last 7 days</a></li>
-                                                            <li><a href="#">Last 14 days</a></li>
-                                                            <li><a href="#">This month</a></li>
-                                                            <li><a href="#">Last month</a></li>
-                                                            <li><a href="#">All time</a></li>
-                                                        </ul>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- /. col-lg-12  -->
                                         </div>
+                                        <!-- /. row -->
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
+                                                <h3>Business hours</h3>
+                                                <div class="col-lg-12">
+                                                    <form class="form-horizontal" role="form">
+                                                        <div class="row">
+                                                            <div class="form-group col-lg-3 col-xs-5">
+                                                                <label class="col-lg-4 control-label">Monday:</label>
+                                                                <div class="form-group col-lg-6 styled-select slate">
+                                                                    <select>
+                                                                        <option selected="true" disabled="disabled">Please select</option>  
+                                                                        <option>Working</option>
+                                                                        <option>Not Working</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Open:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control open">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Close:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control closeH">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group col-lg-3 col-xs-5">
+                                                                <label class="col-lg-4 control-label">Tuesday:</label>
+                                                                <div class="form-group col-lg-6 styled-select slate">
+                                                                    <select>
+                                                                        <option selected="true" disabled="disabled">Please select</option>  
+                                                                        <option>Working</option>
+                                                                        <option>Not Working</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Open:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control open">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Close:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control closeH">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="sameT" name="sameTuesday" />
+                                                                <label for="sameT"><span></span>Same as the above</label>
+                                                            </div>
+                                                        </div><!-- /. row -->
+                                                        <div class="row">
+                                                            <div class="form-group col-lg-3 col-xs-5">
+                                                                <label class="col-lg-4 control-label">Wednesday:</label>
+                                                                <div class="form-group col-lg-6 styled-select slate">
+                                                                    <select>
+                                                                        <option selected="true" disabled="disabled">Please select</option>  
+                                                                        <option>Working</option>
+                                                                        <option>Not Working</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Open:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control open">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Close:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control closeH">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="sameW" name="sameWednesday" />
+                                                                <label for="sameW"><span></span>Same as the above</label>
+                                                            </div>
+                                                        </div><!-- /. row -->
+                                                        <div class="row">
+                                                            <div class="form-group col-lg-3 col-xs-5">
+                                                                <label class="col-lg-4 control-label">Thursday:</label>
+                                                                <div class="form-group col-lg-6 styled-select slate">
+                                                                    <select>
+                                                                        <option selected="true" disabled="disabled">Please select</option>  
+                                                                        <option>Working</option>
+                                                                        <option>Not Working</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Open:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control open">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Close:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control closeH">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="sameTh" name="sameThursday" />
+                                                                <label for="sameTh"><span></span>Same as the above</label>
+                                                            </div>
+                                                        </div><!-- /. row -->
+                                                        <div class="row">
+                                                            <div class="form-group col-lg-3 col-xs-5">
+                                                                <label class="col-lg-4 control-label">Friday:</label>
+                                                                <div class="form-group col-lg-6 styled-select slate">
+                                                                    <select>
+                                                                        <option selected="true" disabled="disabled">Please select</option>  
+                                                                        <option>Working</option>
+                                                                        <option>Not Working</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Open:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control open">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Close:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control closeH">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="sameF" name="sameFriday" />
+                                                                <label for="sameF"><span></span>Same as the above</label>
+                                                            </div>
+                                                        </div><!-- /. row -->
+                                                        <div class="row">
+                                                            <div class="form-group col-lg-3 col-xs-5">
+                                                                <label class="col-lg-4 control-label">Saturday:</label>
+                                                                <div class="form-group col-lg-6 styled-select slate">
+                                                                    <select>
+                                                                        <option selected="true" disabled="disabled">Please select</option>  
+                                                                        <option>Working</option>
+                                                                        <option>Not Working</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Open:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control open">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Close:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control closeH">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="sameSt" name="sameSaturday" />
+                                                                <label for="sameSt"><span></span>Same as the above</label>
+                                                            </div>
+                                                        </div><!-- /. row -->
+                                                        <div class="row">
+                                                            <div class="form-group col-lg-3 col-xs-5">
+                                                                <label class="col-lg-4 control-label">Sunday:</label>
+                                                                <div class="form-group col-lg-6 styled-select slate">
+                                                                    <select>
+                                                                        <option selected="true" disabled="disabled">Please select</option>  
+                                                                        <option>Working</option>
+                                                                        <option>Not Working</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Open:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control open">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4 col-xs-4">
+                                                                <label>Close:</label>
+                                                                <div class="input-append input-group bootstrap-timepicker col-xs-9">
+                                                                    <input type="text" class="form-control closeH">
+                                                                    <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="sameSn" name="sameSunday" />
+                                                                <label for="sameSn"><span></span>Same as the above</label>
+                                                            </div>
+                                                        </div><!-- /. row -->
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- /. col-lg-12  -->
+                                        </div>
+                                        <!-- /. row -->
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
+                                                <h3>Accepted Payment Methods</h3>
+                                                <form class="form-horizontal paym-mth" role="form">
+                                                    <div class="row">
+                                                        <div class="col-lg-1 col-xs-2">
+                                                            <input type="radio" id="cash" name="method">
+                                                            <label for="cash"><span></span></label>
+                                                        </div>
+                                                        <div class="col-lg-1 col-xs-2">
+                                                            <input type="radio" id="check" name="method">
+                                                            <label for="check"><span></span></label>
+                                                        </div>
+                                                        <div class="col-lg-1 col-xs-2">
+                                                            <input type="radio" id="amex" name="method">
+                                                            <label for="amex"><span></span></label>
+                                                        </div>
+                                                        <div class="col-lg-1 col-xs-2">
+                                                            <input type="radio" id="master" name="method">
+                                                            <label for="master"><span></span></label>
+                                                        </div>
+                                                        <div class="col-lg-1 col-xs-2">
+                                                            <input type="radio" id="maestro" name="method">
+                                                            <label for="maestro"><span></span></label>
+                                                        </div>
+                                                        <div class="col-lg-1 col-xs-2">
+                                                            <input type="radio" id="visa" name="method">
+                                                            <label for="visa"><span></span></label>
+                                                        </div>
+                                                        <div class="col-lg-1 col-xs-2">
+                                                            <input type="radio" id="cirrus" name="method">
+                                                            <label for="cirrus"><span></span></label>
+                                                        </div>
+                                                        <div class="col-lg-1 col-xs-2">
+                                                            <input type="radio" id="discover" name="method">
+                                                            <label for="discover"><span></span></label>
+                                                        </div>
+                                                        <div class="col-lg-1 col-xs-2">
+                                                            <input type="radio" id="paypal" name="method">
+                                                            <label for="paypal"><span></span></label>
+                                                        </div>
+                                                        <div class="col-lg-1 col-xs-2">
+                                                            <input type="radio" id="moneyb" name="method">
+                                                            <label for="moneyb"><span></span></label>
+                                                        </div>
+                                                        <div class="col-lg-1 col-xs-2">
+                                                            <input type="radio" id="wunion" name="method">
+                                                            <label for="wunion"><span></span></label>
+                                                        </div>
+                                                        <div class="col-lg-1 col-xs-2">
+                                                            <input type="radio" id="diners" name="method">
+                                                            <label for="diners"><span></span></label>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <!-- /. col-lg-12  -->
+                                        </div>
+                                        <!-- /. row -->
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
+                                                <h3>Describe your Business</h3>
+                                                <form class="form-horizontal" role="form">
+                                                    <div class="row">
+                                                        <label class="col-sm-1 control-label" for="officePhone">About Us:</label>
+                                                        <div class="col-xs-4">
+                                                            <textarea name="" id="" rows="3" class="form-control"></textarea>
+                                                        </div>
+                                                        <label class="col-sm-1 control-label" for="officePhone">Logo:</label>
+                                                        <div class="col-xs-2">
+                                                            <div class="fileUpload btn btn-primary img">
+                                                                <span><i class="fa fa-picture-o"></i>Add Image</span>
+                                                                <input id="uploadBtn" type="file" class="upload" />
+                                                            </div>
+                                                            <input id="uploadFile" disabled="disabled" />
+                                                            <button type="submit" class="btn btn-primary save col-xs-6">Save <i class="fa fa-check-circle-o pull-right"></i></button>
+                                                        </div>
+                                                        <label class="col-sm-1 control-label" for="officePhone">Merchant Video:</label>
+                                                        <div class="col-xs-2">
+                                                            <div class="fileUpload btn btn-primary img">
+                                                                <span><i class="fa fa-video-camera"></i>Add Video</span>
+                                                                <input id="uploadBtn" type="file" class="upload" />
+                                                            </div>
+                                                            <input id="uploadFile" disabled="disabled" />
+                                                            <button type="submit" class="btn btn-primary cancel col-xs-6">Cancel <i class="fa fa-times-circle-o pull-right"></i></button>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-1-2 control-label">Primary Categories:</label>
+                                                            <div class="form-group col-lg-1 styled-select slate">
+                                                                <select>
+                                                                    <option selected="true" disabled="disabled">Select one or more</option>  
+                                                                    <option><input type="checkbox">The second option</option>
+                                                                    <option>The third option</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <!-- /. col-lg-12  -->
+                                        </div>
+                                        <!-- /. row -->
                                     </div>
                                     <div class="tab-pane fade in" id="myAcc">
-                            
+                                        <div class="example">
+                                            <select id="example-getting-started" multiple="multiple">
+                                                <option value="cheese">Cheese</option>
+                                                <option value="tomatoes">Tomatoes</option>
+                                                <option value="mozarella">Mozzarella</option>
+                                                <option value="mushrooms">Mushrooms</option>
+                                                <option value="pepperoni">Pepperoni</option>
+                                                <option value="onions">Onions</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="tab-pane fade in" id="payment">
                                         
@@ -285,8 +615,20 @@
     <script src="assets/js/morris/morris.js" type="text/javascript"></script>
     <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap-timepicker.min.js" type="text/javascript" ></script>
+    <script src="assets/js/bootstrap-multiselect.js" type="text/javascript"></script>
     <script>
         $('#tooltip').tooltip();
+        $('.open').timepicker();
+        $('.closeH').timepicker();
+        document.getElementById("uploadBtn").onchange = function () {
+            document.getElementById("uploadFile").value = this.value;
+        };
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#example-getting-started').multiselect();
+        });
     </script>
 </body>
 </html>

@@ -406,15 +406,17 @@ p {
     font-size: 14px;
     font-weight: 500;
     color: #7c7c7c;
+    margin-right: 10px;
+    float: left;
 }
 
 .custom label {
     margin-left: 0 !important;
 }
 
-#page-inner label {
+/*#page-inner label {
     margin-left: 15px;
-}
+}*/
 
 #page-inner .btn {
     border: 1px solid #dae4eb;
@@ -732,6 +734,183 @@ button.fc-next-button {
     margin-left: 10px;
 }
 
-.form-group-sm .btn-group .dropdown-toggle:first-child {
+.form-group-sm .btn-group .locations {
     width: 93%;
+}
+
+.form-group-sm .btn-group .countries {
+    width: 55%;
+}
+
+/*input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label {
+    color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:16px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../img/check-radio-sprite.png) left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(../img/check-radio-sprite.png) -16px top no-repeat;
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    cursor: pointer;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:14px;
+    height:20px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../img/check-radio-sprite.png) -32px top no-repeat;
+    cursor:pointer;
+}
+
+input[type="radio"]:checked + label span {
+    background:url(../img/check-radio-sprite.png) -46px top no-repeat;
+}
+*/
+.paym-mth label {
+    background: url(../img/payment-methods.png) no-repeat 100% 9%;
+    width: 55px;
+    height: 22px;
+}
+
+.paym-mth label[for="check"] {
+    background-position: 100% 18%;
+}
+
+.paym-mth label[for="amex"] {
+    background-position: 100% 0%;
+}
+
+.paym-mth label[for="cirrus"] {
+    background-position: 100% 27%;
+}
+
+.paym-mth label[for="diners"] {
+    background-position: 100% 36%;
+}
+
+.paym-mth label[for="discover"] {
+    background-position: 100% 45%;
+}
+
+.paym-mth label[for="maestro"] {
+    background-position: 100% 54%;
+}
+
+.paym-mth label[for="master"] {
+    background-position: 100% 63%;
+}
+
+.paym-mth label[for="moneyb"] {
+    background-position: 100% 72%;
+}
+
+.paym-mth label[for="paypal"] {
+    background-position: 100% 82%;
+}
+
+.paym-mth label[for="visa"] {
+    background-position: 100% 91%;
+}
+
+.paym-mth label[for="wunion"] {
+    background-position: 100% 100%;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    padding: 25px;
+    background-color: #12457d;
+    box-shadow: 0 3px 0 #4b6b8f;
+    border: 0 !important;
+    color: #fff !important;
+    border-radius: 4px;
+}
+    .fileUpload input.upload {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        height: 100%;
+    }
+
+    .fileUpload span i {
+        display: block;
+        font-size: 30px;
+        margin-bottom: 13px;
+    }
+
+button.save {
+    color: #fff !important;
+    background-color: #2766ac !important;
+    box-shadow: 0 3px 0 #12457E;
+    border: 0 !important;
+}
+
+button.cancel {
+    color: #fff !important;
+    background-color: #bdbdbd !important;
+    box-shadow: 0 3px 0 #929292;
+    border: 0 !important;
+}
+
+.fa-check-circle-o.pull-right,
+.fa-times-circle-o.pull-right {
+    font-size: 20px;
+}
+
+.styled-select {
+    background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+    height: 29px;
+    overflow: hidden;
+}
+
+.styled-select select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 29px;
+    padding: 5px;
+}
+
+.styled-select.slate {
+    background: url(../img/dropdown-caret.jpg) no-repeat right center;
+    height: 34px;
+}
+
+.styled-select.slate select {
+    height: 34px;
+    width: 178px;
+    border: 1px solid #dae4eb;
+    color: #7e7e7e;
 }
