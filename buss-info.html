@@ -129,14 +129,14 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="nav nav-tabs">
-                            <li class="active"><a href="#info" data-toggle="tab">Business Info</a></li>
-                            <li class="inactive"><a href="#myAcc" data-toggle="tab">My Account</a></li>
+                            <li class="inactive"><a href="#info" data-toggle="tab">Business Info</a></li>
+                            <li class="active"><a href="#myAcc" data-toggle="tab">My Account</a></li>
                             <li class="inactive"><a href="#payment" data-toggle="tab">Billing &amp; Payment</a></li>
                         </ul>
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <div class="tab-content">
-                                    <div class="tab-pane fade active in" id="info">
+                                    <div class="tab-pane fade in" id="info">
                                         <div class="row">
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
                                                 <h3>Business information</h3>
@@ -586,8 +586,148 @@
                                         </div>
                                         <!-- /. row -->
                                     </div>
-                                    <div class="tab-pane fade in" id="myAcc">
-                                        
+                                    <div class="tab-pane fade active in" id="myAcc">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
+                                                <h3>Merchant Information </h3>
+                                                <div class="col-lg-12">
+                                                    <form class="form-horizontal" role="form">
+                                                        <div class="row">
+                                                            <!--<div class="form-group col-lg-3 col-xs-5">
+                                                                <label class="col-lg-4 control-label">Monday:</label>
+                                                                <div class="form-group col-lg-6 styled-select slate">
+                                                                    <select>
+                                                                        <option selected="true" disabled="disabled">Please select</option>  
+                                                                        <option>Working</option>
+                                                                        <option>Not Working</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>-->
+                                                            <!-- /. form-group  -->
+
+                                                            <form class="form-horizontal" role="form">
+                                                                <div class="col-lg-5">
+                                                                    <div class="form-group form-group-sm">
+                                                                        <label class="col-sm-2 control-label" for="firstName">First Name:</label>
+                                                                        <div class="col-xs-7">
+                                                                            <input class="form-control" type="text" id="firstName" placeholder="Daniel" autofocus="autofocus">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group form-group-sm">
+                                                                        <label class="col-sm-2 control-label" for="lastName">Last Name:</label>
+                                                                        <div class="col-xs-7">
+                                                                            <input class="form-control" type="text" id="lastName" placeholder="Grigorov" autofocus="autofocus">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group form-group-sm">
+                                                                        <label class="col-sm-2 control-label" for="email">Email:</label>
+                                                                        <div class="col-xs-7">
+                                                                            <input class="form-control" type="text" id="email" placeholder="grigorov.daniel@gmail.com" autofocus="autofocus">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-group form-group-sm">
+                                                                        <label class="col-sm-3 control-label" for="contactPhone">Contact Phone:</label>
+                                                                        <div class="col-xs-2">
+                                                                            <input class="form-control" type="text" id="contactPhone">
+                                                                        </div>
+                                                                        <div class="col-xs-2">
+                                                                            <input class="form-control" type="text">
+                                                                        </div>
+                                                                        <div class="col-xs-2">
+                                                                            <input class="form-control" type="text">
+                                                                        </div>
+                                                                        <div class="col-xs-2">
+                                                                            <input class="form-control" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group form-group-sm">
+                                                                        <label class="col-sm-3 control-label" for="cellPhone">Cell Phone:</label>
+                                                                        <div class="col-xs-2">
+                                                                            <input class="form-control" type="text" id="cellPhone">
+                                                                        </div>
+                                                                        <div class="col-xs-2">
+                                                                            <input class="form-control" type="text">
+                                                                        </div>
+                                                                        <div class="col-xs-2">
+                                                                            <input class="form-control" type="text">
+                                                                        </div>
+                                                                        <div class="col-xs-2">
+                                                                            <input class="form-control" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group form-group-sm">
+                                                                        <label class="col-sm-3 control-label" for="cellPhone"></label>
+                                                                        <div class="col-xs-5">
+                                                                            <button type="submit" class="btn btn-primary save">Change Password</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <!-- /. row  -->
+                                                    </form>
+                                                    <!-- /. form-horizontal  -->
+                                                    
+                                                    <h3>Primary  Business Address</h3>
+                                                    <form class="form-horizontal" role="form">
+                                                                <div class="col-lg-5">
+                                                                    <div class="form-group form-group-sm">
+                                                                        <label class="col-sm-2 control-label" for="officePhone">Address:</label>
+                                                                        <div class="col-xs-8">
+                                                                            <textarea name="" id="" rows="5" class="form-control"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="col-lg-6">
+                                                                    <div class="form-group col-lg-7 col-xs-5">
+                                                                        <label class="col-lg-5 control-label">Contry:</label>
+                                                                        <div class="form-group col-lg-7 styled-select slate">
+                                                                            <select>
+                                                                                <option selected="true" disabled="disabled">Please select</option>  
+                                                                                <option>Dubai</option>
+                                                                                <option>Bulgaria</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group form-group-sm">
+                                                                        <label class="col-sm-2 control-label" for="zipCode">ZIP:</label>
+                                                                        <div class="col-xs-3">
+                                                                            <input class="form-control" type="text" id="zipCode">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group form-group-sm col-xs-7">
+                                                                        <label class="col-sm-5 control-label" for="city">City:</label>
+                                                                        <div class="col-xs-6">
+                                                                            <input class="form-control" type="text" id="city">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group form-group-sm col-xs-5">
+                                                                        <label class="col-sm-2 control-label" for="state">State:</label>
+                                                                        <div class="col-xs-9">
+                                                                            <input class="form-control" type="text" id="state">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group form-group-sm">
+                                                                        <label class="col-sm-3 control-label" for="cellPhone"></label>
+                                                                        <div class="col-xs-5">
+                                                                            <button type="submit" class="btn btn-primary save">Change Password</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <!-- /. row  -->
+                                                    </form>
+                                                    <!-- /. form-horizontal  -->
+                                                </div>
+                                            </div>
+                                            <!-- /. col-lg-12  -->
+                                        </div>
+                                        <!-- /. row  -->
                                     </div>
                                     <div class="tab-pane fade in" id="payment">
                                         

@@ -947,3 +947,7 @@ button.cancel {
     right: 0;
     padding-top: 10px;
 }
+
+.col-lg-7.styled-select.slate select {
+    width: 266px !important;
+}
