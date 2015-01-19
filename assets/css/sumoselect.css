@@ -13,20 +13,22 @@
             /*placeholder style*/
             .SumoSelect > .CaptionCont > span.placeholder { color: #ccc; font-style: italic; }
 
-        .SumoSelect > .CaptionCont > label { position: absolute; top: 0px; right: 0px; bottom: 0px; width: 30px; background-color: #E0D8D8; }
-            .SumoSelect > .CaptionCont > label > i { background-image: url('https://cdn2.iconfinder.com/data/icons/picol-vector/32/arrow_sans_down-16.png'); background-position: center center; width: 16px; height: 16px; display: block; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; }
+        .SumoSelect > .CaptionCont > label { position: absolute; top: 0px; right: 0px; bottom: 0px; width: 30px; background-color: #E0D8D8; margin-right: 0 !important;}
+            .SumoSelect > .CaptionCont > label > i { background-image: url('../img/dropdown-caret.jpg'); background-position: center center; width: 32px; height: 35px; display: block; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: 0; }
 
-    .SumoSelect > .optWrapper { top: 30px; width: 100%; position: absolute; left: 0; opacity: 0; visibility: hidden; transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out; -webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out; -moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out; -ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out; -o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; z-index: -100; background: #fff; border: 1px solid #ddd; box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11); border-radius: 3px; }
+    .SumoSelect > .optWrapper { top: 30px; width: 500px; position: absolute; left: 0; opacity: 0; visibility: hidden; transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out; -webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out; -moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out; -ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out; -o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; z-index: -100; background: #fff; border: 1px solid #ddd; box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11); border-radius: 3px; }
         .SumoSelect > .optWrapper.open { top: 40px; visibility: visible; opacity: 1; z-index: 1000; }
 
         .SumoSelect > .optWrapper > .options { list-style: none; display: block; padding: 0px; margin: 0px; overflow: auto; border-radius: 3px; /*Set the height of pop up here (only for desktop mode)*/ max-height: 250px; /*height*/ }
         .SumoSelect > .optWrapper.isFloating > .options { max-height: 100%; }
-        .SumoSelect > .optWrapper > .options > li { padding: 4px 6px; border-bottom: 1px solid #F3F3F3; position: relative; }
+        .SumoSelect > .optWrapper > .options > li { padding: 4px 6px; border-bottom: 1px solid #F3F3F3; position: relative; float: left;width: 33%;}
             .SumoSelect > .optWrapper > .options > li:first-child { border-radius: 3px 3px 0px 0px; }
             .SumoSelect > .optWrapper > .options > li:last-child { border-bottom: none; border-radius: 0px 0px 3px 3px; }
-            .SumoSelect > .optWrapper > .options > li:hover { background-color: #CBD0FF; }
+            .SumoSelect > .optWrapper > .options > li:hover,
+            .SumoSelect > .optWrapper > .options > li.selected { background-color: #428bca; cursor: pointer; }
 
             .SumoSelect > .optWrapper > .options > li label { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; display: block; }
+            .SumoSelect > .optWrapper > .options > li:hover label {color:#fff !important;cursor: pointer;}
             .SumoSelect > .optWrapper > .options > li span { display: none; }
 
         /*Floating styles*/
@@ -43,7 +45,7 @@
     /*styling for multiple select*/
     .SumoSelect > .optWrapper.multiple > .options > li { padding-left: 35px; }
         .SumoSelect > .optWrapper.multiple > .options > li span { position: absolute; display: block; width: 30px; top: 0px; left: 0px; bottom: 0px; }
-            .SumoSelect > .optWrapper.multiple > .options > li span i { background-image: url('http://graphics8.nytimes.com/packages/flash/business/20100325-FinancialTuneUp/gfx/checkbox.png'); position: absolute; margin: auto; left: 0px; right: 0px; top: 0px; bottom: 0px; background-repeat: no-repeat; background-position: center center; width: 16px; height: 16px; }
+            .SumoSelect > .optWrapper.multiple > .options > li span i { background: url(../img/check-radio-sprite.png) left top no-repeat; position: absolute; margin: auto; left: 0px; right: 0px; top: 0px; bottom: 0px; width: 16px; height: 23px; }
     .SumoSelect > .optWrapper > .MultiControls { display: none; border-top: 1px solid #ddd; background-color: #fff; box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.13); border-radius: 0px 0px 3px 3px; }
     .SumoSelect > .optWrapper.multiple.isFloating > .MultiControls { display: block; margin-top: 5px; position: absolute; bottom: 0px; width: 100%; }
 
@@ -61,7 +63,7 @@
     .SumoSelect > .optWrapper.multiple.isFloating > .options > li { padding-left: 35px; }
     .SumoSelect > .optWrapper.multiple.isFloating { padding-bottom: 43px; }
     /*selected state*/
-    .SumoSelect > .optWrapper.multiple > .options > li.selected span i { background-image: url('https://cdn1.iconfinder.com/data/icons/Keyamoon-IcoMoon--limited/16/checkbox-checked.png'); }
+    .SumoSelect > .optWrapper.multiple > .options > li.selected span i { background: url(../img/check-radio-sprite.png) -16px top no-repeat; }
 
     /*disabled state*/
     .SumoSelect.disabled { opacity: 0.7;}

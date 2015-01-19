@@ -1,0 +1,531 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shooger Admin</title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="../css5/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="../css5/font-awesome.css" rel="stylesheet" type="text/css" />
+    <!-- MORRIS CHART STYLES-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" type="text/css" />
+    <!-- CUSTOM STYLES-->
+    <link href="../css5/custom.css" rel="stylesheet" type="text/css" />
+    <!-- GOOGLE FONTS-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <!-- JQUERY STYLES -->
+    <link href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet"
+        type="text/css" />
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="../imgs5/logo.png" alt=""></a>
+            </div>
+            <div class="col-lg-10 col-md-8 col-sm-7 col-xs-12">
+                <span class="sitemap">
+                    <ul>
+                        <li class="active"><a href="">Admin</a></li>
+                        <li><a href=""></a>Dashboard</li>
+                    </ul>
+                </span>
+                <div class="pull-right user-dropdown">
+                    <img src="../imgs5/user_photo.png" alt="">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            bobi@shooger.com <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li class="text-center">
+                        <img src="../imgs5/company_logo.png" class="user-image img-responsive"/>
+                        <h3>Red Bull Cliff Diving Devision</h3>
+                    </li>
+                    <li>
+                        <a class="active-menu" href="index.html"><i class="fa fa-bar-chart-o"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="subscribers.html"><i class="fa fa-users"></i> Subscribers</a>
+                    </li>
+                    <li>
+                        <a href="promos.html"><i class="fa fa-bullhorn"></i> Promos</a>
+                    </li>
+                    <li>
+                        <a href="buss-info.html"><i class="fa fa-briefcase"></i> Business Info</a>
+                    </li>
+                    <li>
+                        <a href="offers.html"><i class="fa fa-tags"></i> Purchased Offers</a>
+                    </li>
+                    <li>
+                        <a href="qr-cards.html"><i class="fa fa-qrcode"></i> Employee QR Cards</a>
+                    </li>
+                    <li>
+                        <a href="network.html"><i class="fa fa-sitemap"></i> Build My Network </a>
+                    </li>
+                    <li>
+                        <a href="locations.html"><i class="fa fa-map-marker"></i> Locations<!--<span class="fa arrow"></span>--></a>
+                        <!--<ul class="nav nav-second-level">
+                            <li>
+                                <a href="#">Second Level Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Level Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Level Link<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>-->
+                    </li>
+                    <li>
+                    <a href="#"><i class="fa fa-reply"></i> Back</a>
+                    </li>
+                    <li class="text-center">
+                        <h4>In partnership with</h4>
+                        <img src="../imgs5/partnership_logo.png" class="user-image img-responsive"/>    
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>
+                        Account Summary</h1>
+                </div>
+            </div>
+            <div id="page-inner" class="row">
+                <!-- /. ROW  -->
+                <div class="filters">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
+                            <div class="col-lg-2 col-md-6 col-xs-6">
+                                <label>
+                                    Timeframe:</label>
+                                <div class="btn-group">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span data-bind="label">
+                                            Select One</span>
+                                    </button>
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+                                        <span class="caret">
+                                        </span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="custom">
+                                            <label>
+                                                Custom</label>
+                                            <input type="text" id="dateFrom">
+                                            <span>
+                                                -</span>
+                                            <input type="text" id="dateTo">
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Today</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Yesterday</a></li>
+                                        <li>
+                                            <a href="#">
+                                                This Week</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Last 7 days</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Last 14 days</a></li>
+                                        <li>
+                                            <a href="#">
+                                                This month</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Last month</a></li>
+                                        <li>
+                                            <a href="#">
+                                                All time</a></li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <button type="button" class="btn">
+                                                Apply</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-xs-6">
+                                <label>
+                                    Channels:</label>
+                                <div class="btn-group dropdown-toggle" data-toggle="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span data-bind="label">
+                                            All Channels</span>
+                                    </button>
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+                                        <span class="caret">
+                                        </span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <a href="#">
+                                                Today</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Yesterday</a></li>
+                                        <li>
+                                            <a href="#">
+                                                This Week</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Last 7 days</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Last 14 days</a></li>
+                                        <li>
+                                            <a href="#">
+                                                This month</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Last month</a></li>
+                                        <li>
+                                            <a href="#">
+                                                All time</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-xs-6">
+                                <label>
+                                    Campaigns:</label>
+                                <div class="btn-group dropdown-toggle" data-toggle="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span data-bind="label">
+                                            All Campaigns</span>
+                                    </button>
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+                                        <span class="caret">
+                                        </span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <a href="#">
+                                                Today</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Yesterday</a></li>
+                                        <li>
+                                            <a href="#">
+                                                This Week</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Last 7 days</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Last 14 days</a></li>
+                                        <li>
+                                            <a href="#">
+                                                This month</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Last month</a></li>
+                                        <li>
+                                            <a href="#">
+                                                All time</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-xs-6">
+                                <label>
+                                    Locations:</label>
+                                <div class="btn-group dropdown-toggle" data-toggle="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span data-bind="label">
+                                            All Locations</span>
+                                    </button>
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+                                        <span class="caret">
+                                        </span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <a href="#">
+                                                Today</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Yesterday</a></li>
+                                        <li>
+                                            <a href="#">
+                                                This Week</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Last 7 days</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Last 14 days</a></li>
+                                        <li>
+                                            <a href="#">
+                                                This month</a></li>
+                                        <li>
+                                            <a href="#">
+                                                Last month</a></li>
+                                        <li>
+                                            <a href="#">
+                                                All time</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /. ROW  -->
+                </div>
+                <!-- /. filters  -->
+                <div class="graph">
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                        <h3>
+                            Shooger User Actions</h3>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Customer Clicks
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-line-chart">
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                Activation Promostion
+                                <span class="active-promos">
+                                    0</span>
+                                Inactivation Promostion
+                                <span class="inactive-promos">
+                                    11</span>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-6 col-md-4 col-sm-12 col-xs-4">
+                            <div class="panel panel-primary text-center no-boder">
+                                <div class="panel-body">
+                                    <h3>Clicks</h3>
+                                    <img src="../imgs5/clicks.png" alt="">
+                                    <h3 class="number">12</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-sm-12 col-xs-4">
+                            <div class="panel panel-primary text-center no-boder">
+                                <div class="panel-body">
+                                    <h3>Calls</h3>
+                                    <img src="../imgs5/calls.png" alt="">
+                                    <h3 class="number">120 GB </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-sm-12 col-xs-4">
+                            <div class="panel panel-primary text-center no-boder">
+                                <div class="panel-body">
+                                    <h3>Shares</h3>
+                                    <img src="../imgs5/shares.png" alt="">
+                                    <h3 class="number">2</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-sm-12 col-xs-4">
+                            <div class="panel panel-primary text-center no-boder">
+                                <div class="panel-body">
+                                    <h3>Likes</h3>
+                                    <img src="../imgs5/likes.png" alt="">
+                                    <h3 class="number">2</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-sm-12 col-xs-4">
+                            <div class="panel panel-primary text-center no-boder">
+                                <div class="panel-body">
+                                    <h3>Navigates</h3>
+                                    <img src="../imgs5/navigates.png" alt="">
+                                    <h3 class="number">2</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-sm-12 col-xs-4">
+                            <div class="panel panel-primary text-center no-boder">
+                                <div class="panel-body">
+                                    <h3>Saves</h3>
+                                    <img src="../imgs5/saves.png" alt="">
+                                    <h3 class="number">2</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-sm-12 col-xs-4">
+                            <div class="panel panel-primary text-center no-boder">
+                                <div class="panel-body">
+                                    <h3>Subscribers</h3>
+                                    <img src="../imgs5/subscribers.png" alt="">
+                                    <h3 class="number">12</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-sm-12 col-xs-4">
+                            <div class="panel panel-primary text-center no-boder">
+                                <div class="panel-body">
+                                    <h3>Redemptions</h3>
+                                    <img src="../imgs5/redemptions.png" alt="">
+                                    <h3 class="number">6</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-sm-12 col-xs-4">
+                            <div class="panel panel-primary text-center no-boder">
+                                <div class="panel-body">
+                                    <h3>Reviews</h3>
+                                    <img src="../imgs5/reviews.png" alt="">
+                                    <h3 class="number">12</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                        <h3>
+                            Where are my Customers?</h3>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div id="map-canvas">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-act">
+                        <div class="col-lg- 9 col-md-12 col-sm-12 col-xs-12">
+                            <h3>
+                                Purchasable Offer Activity</h3>
+                            <div class="panel panel-default col-lg-2 col-md-3 col-xs-3">
+                                <div class="panel-body">
+                                    <h4>
+                                        Earned</h4>
+                                    <img src="../imgs5/earned.png" alt="">
+                                    <span>
+                                        8,971</span>
+                                </div>
+                            </div>
+                            <div class="panel panel-default col-lg-2 col-md-3 col-xs-3">
+                                <div class="panel-body">
+                                    <h4>
+                                        Bought</h4>
+                                    <img src="../imgs5/bought.png" alt="">
+                                    <span>
+                                        168</span>
+                                </div>
+                            </div>
+                            <div class="panel panel-default col-lg-2 col-md-3 col-xs-3">
+                                <div class="panel-body">
+                                    <h4>
+                                        Used</h4>
+                                    <img src="../imgs5/used.png" alt="">
+                                    <span>
+                                        1,211</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                <!-- /. ROW  -->
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js" type="text/javascript"></script>
+    <!-- MORRIS CHART SCRIPTS -->
+    <script src="assets/js/morris/raphael-2.1.0.min.js" type="text/javascript"></script>
+    <script src="assets/js/morris/morris.js" type="text/javascript"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=true" type="text/javascript"></script>
+    <script>
+        $("#dateFrom").datepicker();
+        $("#dateTo").datepicker();
+
+        new Morris.Line({
+            element: "morris-line-chart",
+            data: [
+                { y: "2006", a: 100, b: 90 },
+                { y: "2007", a: 75, b: 65 },
+                { y: "2008", a: 50, b: 40 },
+                { y: "2009", a: 75, b: 65 },
+                { y: "2010", a: 50, b: 40 },
+                { y: "2011", a: 75, b: 65 },
+                { y: "2012", a: 100, b: 90 }
+            ],
+            xkey: "y",
+            ykeys: ["a", "b"],
+            labels: ["Series A", "Series B"]
+        });
+    </script>
+    <script type="text/javascript">
+        var map;
+        var centerPos = new google.maps.LatLng(-37.74723337588968, 144.961341333252);
+        var zoomLevel = 12;
+
+        function initialize() {
+            var mapOptions = {
+                center: centerPos,
+                zoom: zoomLevel
+            };
+
+            map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+            var locations = [
+          ["First Shoppe", -37.808204, 144.855579],
+          ["Second Shoppe", -37.675648, 145.026125],
+          ["Third Shoppe", -37.816935, 144.966877],
+          ["Fourth Shoppe", -37.818714, 145.036494],
+          ["Fifth Shoppe", -37.793834, 144.987018],
+          ["Sixth Shoppe", -37.737116, 144.998581],
+          ["Seventh Shoppe", -37.765528, 144.922624]
+        ];
+
+            var image = "../imgs5/gMarkerImage.png";
+        }
+        google.maps.event.addDomListener(window, "load", initialize);
+
+    </script>
+</body>
+</html>

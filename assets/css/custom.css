@@ -920,7 +920,7 @@ button.cancel {
     color: #7e7e7e;
 }
 
-/*.selectpicker {
+.selectpicker {
     background-image: url(../img/dropdown-caret.jpg);
     background-repeat: no-repeat;
     background-position: 100% 0;
@@ -930,7 +930,7 @@ button.cancel {
     background-image: url(../img/dropdown-caret.jpg);
     background-repeat: no-repeat;
     background-position: 100% 0;
-}*/
+}
 
 .btn.selectpicker {
     padding: 0 12px;
@@ -950,4 +950,8 @@ button.cancel {
 
 .col-lg-7.styled-select.slate select {
     width: 266px !important;
+}
+
+.selected label {
+    color: #fff !important;
 }
