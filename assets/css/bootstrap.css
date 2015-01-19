@@ -1992,11 +1992,11 @@ select[multiple].input-lg {
 .form-horizontal .form-control-static {
   padding-top: 7px;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .form-horizontal .control-label {
     text-align: right;
   }
-}
+}*/
 .form-horizontal .has-feedback .form-control-feedback {
   top: 0;
   right: 15px;
@@ -5214,10 +5214,10 @@ button.close {
   filter: alpha(opacity=0);
   opacity: 0;
 }
-.tooltip.in {
+/*.tooltip.in {
   filter: alpha(opacity=90);
   opacity: .9;
-}
+}*/
 .tooltip.top {
   padding: 5px 0;
   margin-top: -3px;
@@ -5235,13 +5235,16 @@ button.close {
   margin-left: -3px;
 }
 .tooltip-inner {
-  max-width: 200px;
+  max-width: 400px;
+  min-width: 300px;
   padding: 3px 8px;
-  color: #fff;
+  color: #595959;
   text-align: center;
   text-decoration: none;
-  background-color: #000;
+  background-color: #f9f4de;
+  border: 1px solid #9e8842;
   border-radius: 4px;
+  font-size: 16px;
 }
 .tooltip-arrow {
   position: absolute;
@@ -5255,7 +5258,7 @@ button.close {
   left: 50%;
   margin-left: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000;
+  border-top-color: #9e8842;
 }
 .tooltip.top-left .tooltip-arrow {
   bottom: 0;

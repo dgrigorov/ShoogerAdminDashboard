@@ -726,13 +726,13 @@ button.fc-next-button {
 
 .form-group-sm .col-xs-1 {
     width: 7.333333%;
-    padding: 3px;
+    /*padding: 3px;*/
     margin-left: 3px;
 }
 
-.form-group-sm .col-xs-1:nth-child(2) {
+/*.form-group-sm .col-xs-1:nth-child(2) {
     margin-left: 10px;
-}
+}*/
 
 .form-group-sm .btn-group .locations {
     width: 93%;
@@ -802,48 +802,78 @@ textarea[name="about"] {
     height: 22px;
 }
 
-.paym-mth label[for="check"] {
+.paym-mth label.check {
     background-position: 100% 18%;
 }
 
-.paym-mth label[for="amex"] {
+.paym-mth label.amex {
     background-position: 100% 0%;
 }
 
-.paym-mth label[for="cirrus"] {
+.paym-mth label.cirrus {
     background-position: 100% 27%;
 }
 
-.paym-mth label[for="diners"] {
+.paym-mth label.diners {
     background-position: 100% 36%;
 }
 
-.paym-mth label[for="discover"] {
+.paym-mth label.discover {
     background-position: 100% 45%;
 }
 
-.paym-mth label[for="maestro"] {
+.paym-mth label.maestro {
     background-position: 100% 54%;
 }
 
-.paym-mth label[for="master"] {
+.paym-mth label.master {
     background-position: 100% 63%;
 }
 
-.paym-mth label[for="moneyb"] {
+.paym-mth label.moneyb {
     background-position: 100% 72%;
 }
 
-.paym-mth label[for="paypal"] {
+.paym-mth label.paypal {
     background-position: 100% 82%;
 }
 
-.paym-mth label[for="visa"] {
+.paym-mth label.visa {
     background-position: 100% 91%;
 }
 
-.paym-mth label[for="wunion"] {
+.paym-mth label.wunion {
     background-position: 100% 100%;
+}
+
+.spk-lang label {
+    background: url(../img/spoken-languages.png) no-repeat 100% 100%;
+    width: 60px;
+    height: 17px;
+}
+
+.spk-lang label.es {
+    background-position: 100% 14%;
+}
+
+.spk-lang label.fr {
+    background-position: 100% 32%;
+}
+
+.spk-lang label.de {
+    background-position: 100% -3%;
+}
+
+.spk-lang label.it {
+    background-position: 100% 49%;
+}
+
+.spk-lang label.jp {
+    background-position: 100% 66%;
+}
+
+.spk-lang label.ru {
+    background-position: 100% 83%;
 }
 
 .fileUpload {
@@ -875,11 +905,14 @@ textarea[name="about"] {
         margin-bottom: 13px;
     }
 
+button.addLoc,
 button.save {
     color: #fff !important;
     background-color: #2766ac !important;
     box-shadow: 0 3px 0 #12457E;
     border: 0 !important;
+    text-transform: uppercase;
+    width: 110%;
 }
 
 button.cancel {
@@ -954,4 +987,58 @@ button.cancel {
 
 .selected label {
     color: #fff !important;
+}
+
+.col-lg-5.styled-select.slate select {
+    width: 335px;
+    margin-left: 14px;
+}
+
+.form-group.col-lg-5.styled-select.slate {
+    margin-right: 10px;
+}
+
+/*input.state {
+    width: 92%;
+}*/
+
+input.zipCode {
+    width: 130%;
+}
+
+.contry .control-label {
+    margin-left: 20px;
+    margin-bottom: 0;
+    padding-top: 6px;
+}
+
+    .contry .slcCntr {
+        width: 260px !important;
+        margin-left: 15px;
+    }
+
+.required {
+    float: left;
+}
+
+    .required label {
+        margin: 0;
+        padding: 10px 5px;
+        font-weight: 700 !important;
+        color: #ffbf0e !important;
+    }
+
+.question {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/tooltip-icon.png);
+}
+
+.SumoSelect .lang .optWrapper {
+    width: 200px;
+}
+
+.SumoSelect .lang .optWrapper > .options > li {
+    width: 100%;
 }
