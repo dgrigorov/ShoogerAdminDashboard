@@ -84,31 +84,6 @@
                         <a href="network.html"><i class="fa fa-sitemap"></i> Build My Network </a>
                     </li>
                     <li>
-                        <a href="locations.html"><i class="fa fa-map-marker"></i> Locations<!--<span class="fa arrow"></span>--></a>
-                        <!--<ul class="nav nav-second-level">
-                            <li>
-                                <a href="#">Second Level Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Second Level Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Second Level Link<span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="#">Third Level Link</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Link</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Link</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>-->
-                    </li>
-                    <li>
                     <a href="#"><i class="fa fa-reply"></i> Back</a>
                     </li>
                     <li class="text-center">
@@ -141,11 +116,11 @@
                                         <div class="row">
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
                                                 <h3>Business information</h3>
-                                                <div class="col-lg-6">
+                                                <div class="col-lg-4">
                                                     <div class="row">
-                                                        <form class="form-horizontal" role="form">
+                                                        <div class="form-horizontal" role="form">
                                                             <div class="form-group form-group-sm">
-                                                                <label class="col-sm-2 control-label" for="businessName">Business Name:</label>
+                                                                <label class="col-sm-2-3 control-label" for="businessName">Business Name:</label>
                                                                 <div class="col-xs-8">
                                                                     <input class="form-control" type="text" id="businessName" placeholder="Daniel Grigorov" autofocus>
                                                                 </div>
@@ -154,17 +129,14 @@
                                                                 </div>
                                                             </div>
                                                             <div class="form-group form-group-sm">
-                                                                <label class="col-sm-2 control-label" for="officePhone">Office Phone:</label>
-                                                                <div class="col-xs-2">
+                                                                <label class="col-sm-2-3 control-label" for="officePhone">Office Phone:</label>
+                                                                <div class="col-xs-2-3">
                                                                     <input class="form-control" type="text" id="officePhone">
                                                                 </div>
-                                                                <div class="col-xs-2">
+                                                                <div class="col-xs-2-3">
                                                                     <input class="form-control" type="text">
                                                                 </div>
-                                                                <div class="col-xs-2">
-                                                                    <input class="form-control" type="text">
-                                                                </div>
-                                                                <div class="col-xs-2">
+                                                                <div class="col-xs-2-3">
                                                                     <input class="form-control" type="text">
                                                                 </div>
                                                                 <div class="required">
@@ -172,31 +144,40 @@
                                                                 </div>
                                                             </div>
                                                             <div class="form-group form-group-sm">
-                                                                <label class="col-sm-2 control-label" for="website">Website:</label>
+                                                                <label class="col-sm-2-3 control-label" for="website">Website:</label>
                                                                 <div class="col-xs-8">
                                                                     <input class="form-control" type="url" id="website">
                                                                 </div>
                                                             </div>
-                                                        </form>
+                                                            <div class="form-group form-group-sm has-error">
+                                                                <label class="col-sm-2-3 control-label" for="website">Public email:</label>
+                                                                <div class="col-xs-8">
+                                                                    <input class="form-control" type="email" id="website" placeholder="Demo input field with unvalid data">
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-lg-6">
+                                                <div class="col-lg-5">
                                                     <div class="row">
-                                                        <form class="form-horizontal" role="form">
+                                                        <div class="form-horizontal col-lg-12" role="form">
                                                             <div class="form-group form-group-sm">
-                                                                <label class="col-sm-2 control-label" for="businessLocations">Business Locations:</label>
-                                                                <div class="form-group col-lg-5 styled-select slate">
+                                                                <label class="col-sm-3 control-label" for="businessLocations">Business Locations:</label>
+                                                                <div class="form-group col-lg-5 styled-select slate businessLocations">
                                                                     <select>
                                                                         <option selected="true" disabled="disabled">Please select</option>  
                                                                         <option>Working</option>
                                                                         <option>Not Working</option>
                                                                     </select>
                                                                 </div>
-                                                                <div class="form-group col-lg-3">
-                                                                    <button type="submit" class="btn addLoc">Add Location</button>
+                                                                <div class="form-group col-lg-3 pull-right">
+                                                                    <input type="submit" class="btn addLoc" value="Add Location"></input>
                                                                 </div>
-                                                                <div class="form-group col-lg-4 checkbox">
+                                                                <div class="form-group col-lg-3 pull-right">
+                                                                    <input type="button" class="btn addLoc" value="Cancel"></input>
+                                                                </div>
+                                                                <div class="form-group col-lg-5 checkbox">
                                                                     <input type="checkbox" id="sameT" name="sameTuesday">
                                                                     <label for="sameT"><span></span>Is primary location</label>
                                                                     <a class="question" data-toggle="tooltip" data-placement="top" title="Hiding your location will cause your street address to not be visible. Customers will still see your City, State, &amp; Zip Code, but won't actually see your precise address.This is useful for businesses that don't have a brick &amp; mortar storefront, but rather perform services or sell products within a general geographic area."></a>
@@ -205,7 +186,7 @@
 
                                                             <div class="form-group form-group-sm">
                                                                 <label class="col-sm-2 control-label" for="officePhone">Address:</label>
-                                                                <div class="col-xs-8">
+                                                                <div class="col-lg-9-2">
                                                                     <textarea name="" id="" rows="5" class="form-control"></textarea>
                                                                     <div class="form-group col-lg-5 checkbox pull-right">
                                                                         <input type="checkbox" id="sameT" name="sameTuesday">
@@ -214,14 +195,15 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </form>
+                                                        </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="row contry">
-                                                    <div class="form-group form-group-sm">
-                                                        <label class="control-label lbSlcCntr">Contry:</label>
-                                                        <div class="form-group col-lg-2 styled-select slate">
+
+                                                    <div class="form-group form-group-sm col-lg-3">
+                                                        <label class="col-lg-3 control-label lbSlcCntr">Contry:</label>
+                                                        <div class="form-group col-lg-7 styled-select slate row">
                                                             <select class="slcCntr">
                                                                 <option selected="true" disabled="disabled">Please select</option>  
                                                                 <option value="Bulgaria">Bulgaria</option>
@@ -237,28 +219,22 @@
                                                         <div class="required">
                                                             <label for="">*</label>
                                                         </div>
-                                                    </div>
-
-                                                    <div class="form-group form-group-sm">
-                                                        <label class="control-label" for="zipCode">ZIP:</label>
-                                                        <div class="col-xs-1">
-                                                            <input class="form-control" type="text" id="zipCode">
-                                                        </div>
-                                                        <div class="required">
-                                                            <label for="">*</label>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group form-group-sm">
-                                                        <label class="control-label" for="city">City:</label>
-                                                        <div class="col-xs-2">
+                                                        <label class="col-lg-3 control-label" for="city">City:</label>
+                                                        <div class="col-xs-7">
                                                             <input class="form-control" type="email" id="city">
                                                         </div>
                                                         <div class="required">
                                                             <label for="">*</label>
                                                         </div>
-                                                        <label class="control-label" for="state">State:</label>
-                                                        <div class="col-xs-2">
+                                                        <label class="col-lg-3 control-label" for="city">City:</label>
+                                                        <div class="col-xs-7">
+                                                            <input class="form-control" type="email" id="city">
+                                                        </div>
+                                                        <div class="required">
+                                                            <label for="">*</label>
+                                                        </div>
+                                                        <label class="col-lg-3 control-label" for="state">State:</label>
+                                                        <div class="col-xs-7">
                                                             <input class="form-control state" type="email" id="state">
                                                         </div>
                                                         <div class="required">
@@ -275,7 +251,7 @@
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
                                                 <h3>Business hours</h3>
                                                 <div class="col-lg-12">
-                                                    <form class="form-horizontal" role="form">
+                                                    <div class="form-horizontal" role="form">
                                                         <div class="row">
                                                             <div class="form-group col-lg-3 col-xs-5">
                                                                 <label class="col-lg-4 control-label">Monday:</label>
@@ -482,7 +458,7 @@
                                                                 <label for="sameSn"><span></span>Same as the above</label>
                                                             </div>
                                                         </div><!-- /. row -->
-                                                    </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <!-- /. col-lg-12  -->
@@ -492,7 +468,7 @@
                                         <div class="row">
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
                                                 <h3>Accepted Payment Methods</h3>
-                                                <form class="form-horizontal paym-mth" role="form">
+                                                <div class="form-horizontal paym-mth" role="form">
                                                     <div class="row">
                                                         <div class="col-lg-1 col-xs-2">
                                                             <input type="checkbox" id="cash" name="method">
@@ -543,16 +519,16 @@
                                                             <label for="diners" class="dinners"><span></span></label>
                                                         </div>
                                                     </div>
-                                                </form>
+                                                </div>
                                             </div>
                                             <!-- /. col-lg-12  -->
                                         </div>
                                         <!-- /. row -->
 
                                         <div class="row">
-                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11 spk-lang">
                                                 <h3>Spoken Languages</h3>
-                                                <form class="form-horizontal spk-lang" role="form">
+                                                <div class="form-horizontal col-lg-8" role="form">
                                                     <div class="row">
                                                         <div class="col-lg-1 col-xs-2">
                                                             <input type="checkbox" id="usa" name="method">
@@ -583,7 +559,7 @@
                                                             <label for="ru" class="ru"><span></span></label>
                                                         </div>
                                                     </div>
-                                                </form>
+                                                </div>
                                                 <div class="form-group col-lg-4">
                                                     <label class="col-lg-5 control-label">Other languages:</label>
                                                     <select class="selectpicker SlectBox lang" multiple title="Select Primary">
@@ -609,35 +585,35 @@
                                         <!-- /. row -->
 
                                         <div class="row">
-                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11 descr-bus">
                                                 <h3>Describe your Business</h3>
-                                                <form class="form-horizontal" role="form">
+                                                <div class="form-horizontal" role="form">
                                                     <div class="row">
-                                                        <label class="col-sm-1 control-label" for="officePhone">About Us:</label>
-                                                        <div class="col-xs-4">
+                                                        <div class="col-lg-4">
+                                                            <label class="control-label" for="officePhone">About Us:</label>
                                                             <textarea name="about" id="" rows="3" class="form-control"></textarea>
                                                         </div>
-                                                        <label class="col-sm-1 control-label" for="officePhone">Logo:</label>
-                                                        <div class="col-xs-2">
+                                                        <div class="col-lg-2 logo">
+                                                            <label class="control-label" for="officePhone">Logo:</label>
                                                             <div class="fileUpload btn btn-primary img">
                                                                 <span><i class="fa fa-picture-o"></i>Add Image</span>
                                                                 <input id="uploadBtn" type="file" class="upload" />
                                                             </div>
-                                                            <input id="uploadFile" disabled="disabled" />
-                                                            <button type="submit" class="btn save col-xs-6">Save <i class="fa fa-check-circle-o pull-right"></i></button>
+                                                            <p><a href="#">Change</a>/<a href="#">Remove logo</a></p>
                                                         </div>
-                                                        <label class="col-sm-1 control-label" for="officePhone">Merchant Video:</label>
-                                                        <div class="col-xs-2">
+                                                        <div class="col-lg-2 video">
+                                                            <label class="control-label" for="officePhone">Merchant Video:</label>
                                                             <div class="fileUpload btn btn-primary img">
                                                                 <span><i class="fa fa-video-camera"></i>Add Video</span>
                                                                 <input id="uploadBtn" type="file" class="upload" />
                                                             </div>
-                                                            <input id="uploadFile" disabled="disabled" />
-                                                            <button type="submit" class="btn cancel col-xs-6">Cancel <i class="fa fa-times-circle-o pull-right"></i></button>
+                                                            <p><a href="#">Change</a>/<a href="#">Remove Video</a></p>
                                                         </div>
+                                                        
+                                                        
                                                         <div class="form-group col-lg-3">
-                                                            <div class="row">
-                                                                <label class="col-lg-5 control-label">Primary Category:</label>
+                                                            <div class="row primary">
+                                                                <label class="control-label">Primary Category:</label>
                                                                 <select class="selectpicker primary" title="Select Primary">
                                                                     <option>Mustard</option>
                                                                     <option>Ketchup</option>
@@ -648,9 +624,9 @@
                                                                 </select>
                                                             </div>
                                                         </div>
-                                                        <div class="form-group col-lg-4">
+                                                        <div class="form-group col-lg-3">
                                                             <div class="row">
-                                                                <label class="col-lg-5 control-label">Secondary Category:</label>
+                                                                <label class="control-label">Secondary Category:</label>
                                                                 <select class="selectpicker SlectBox" multiple title="Select Primary">
                                                                     <option value="Automotive">Automotive</option>
                                                                     <option value="Babies &amp; Kids">Babies &amp; Kids</option>
@@ -670,18 +646,23 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </form>
+                                                </div>
                                             </div>
                                             <!-- /. col-lg-12  -->
                                         </div>
                                         <!-- /. row -->
+                                        <div class="row">
+                                            <div class="form-group col-lg-1">
+                                                <input type="submit" class="btn btn-primary save col-xs-6" value="Save"></input>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="tab-pane fade in" id="myAcc">
                                         <div class="row">
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
                                                 <h3>Merchant Information </h3>
                                                 <div class="col-lg-12">
-                                                    <form class="form-horizontal" role="form">
+                                                    <div class="form-horizontal" role="form">
                                                         <div class="row">
                                                             <!--<div class="form-group col-lg-3 col-xs-5">
                                                                 <label class="col-lg-4 control-label">Monday:</label>
@@ -695,7 +676,7 @@
                                                             </div>-->
                                                             <!-- /. form-group  -->
 
-                                                            <form class="form-horizontal" role="form">
+                                                            <div class="form-horizontal" role="form">
                                                                 <div class="col-lg-5">
                                                                     <div class="form-group form-group-sm">
                                                                         <label class="col-sm-2 control-label" for="firstName">First Name:</label>
@@ -736,18 +717,18 @@
                                                                     <div class="form-group form-group-sm">
                                                                         <label class="col-sm-2 control-label" for="cellPhone"></label>
                                                                         <div class="col-xs-5">
-                                                                            <button type="submit" class="btn save">Change Email</button>
+                                                                            <input type="submit" class="btn save" value="Change Email"></input>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </form>
+                                                            </div>
                                                         </div>
                                                         <!-- /. row  -->
-                                                    </form>
+                                                    </div>
                                                     <!-- /. form-horizontal  -->
                                                     
                                                     <h3>Primary  Business Address</h3>
-                                                    <form class="form-horizontal" role="form">
+                                                    <div class="form-horizontal" role="form">
                                                                 <div class="col-lg-5">
                                                                     <div class="form-group form-group-sm">
                                                                         <label class="col-sm-2 control-label" for="officePhone">Address:</label>
@@ -789,14 +770,13 @@
                                                                     <div class="form-group form-group-sm">
                                                                         <label class="col-sm-2 control-label" for="cellPhone"></label>
                                                                         <div class="col-xs-5">
-                                                                            <button type="submit" class="btn btn-primary save">Change Password</button>
+                                                                            <input type="submit" class="btn btn-primary save" value="Change Password"></input>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </form>
                                                         </div>
                                                         <!-- /. row  -->
-                                                    </form>
+                                                    </div>
                                                     <!-- /. form-horizontal  -->
                                                 </div>
                                             </div>

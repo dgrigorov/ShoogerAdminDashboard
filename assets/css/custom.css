@@ -846,33 +846,33 @@ textarea[name="about"] {
     background-position: 100% 100%;
 }
 
-.spk-lang label {
+.spk-lang .form-horizontal label {
     background: url(../img/spoken-languages.png) no-repeat 100% 100%;
     width: 60px;
     height: 17px;
 }
 
-.spk-lang label.es {
+.spk-lang .form-horizontal label.es {
     background-position: 100% 14%;
 }
 
-.spk-lang label.fr {
+.spk-lang .form-horizontal label.fr {
     background-position: 100% 32%;
 }
 
-.spk-lang label.de {
+.spk-lang .form-horizontal label.de {
     background-position: 100% -3%;
 }
 
-.spk-lang label.it {
+.spk-lang .form-horizontal label.it {
     background-position: 100% 49%;
 }
 
-.spk-lang label.jp {
+.spk-lang .form-horizontal label.jp {
     background-position: 100% 66%;
 }
 
-.spk-lang label.ru {
+.spk-lang .form-horizontal label.ru {
     background-position: 100% 83%;
 }
 
@@ -905,8 +905,8 @@ textarea[name="about"] {
         margin-bottom: 13px;
     }
 
-button.addLoc,
-button.save {
+.addLoc,
+.save {
     color: #fff !important;
     background-color: #2766ac !important;
     box-shadow: 0 3px 0 #12457E;
@@ -915,7 +915,7 @@ button.save {
     width: 110%;
 }
 
-button.cancel {
+.cancel {
     color: #fff !important;
     background-color: #bdbdbd !important;
     box-shadow: 0 3px 0 #929292;
@@ -981,10 +981,6 @@ button.cancel {
     padding-top: 10px;
 }
 
-.col-lg-7.styled-select.slate select {
-    width: 266px !important;
-}
-
 .selected label {
     color: #fff !important;
 }
@@ -1039,6 +1035,36 @@ input.zipCode {
     width: 200px;
 }
 
-.SumoSelect .lang .optWrapper > .options > li {
+    .SumoSelect .lang .optWrapper > .options > li {
+        width: 100%;
+    }
+
+.spk-lang .form-group .SumoSelect {
+    top: -10px;
+}
+
+.spk-lang .form-group .SumoSelect .optWrapper,
+.primary .SumoSelect .optWrapper {
+    width: 200px;
+}
+
+    .spk-lang .form-group .SumoSelect .optWrapper li,
+    .primary .SumoSelect .optWrapper .options li {
+        width: 100%;
+    }
+
+.descr-bus label {
     width: 100%;
+}
+
+    .descr-bus .col-lg-2.logo {
+        margin-left: 50px;
+    }
+
+        .descr-bus .col-lg-2 p {
+            margin-left: -15px;
+        }
+
+.businessLocations {
+    padding-left: 0 !important;
 }
