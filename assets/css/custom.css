@@ -1059,6 +1059,7 @@ input.zipCode {
 
     .descr-bus .col-lg-2.logo {
         margin-left: 50px;
+        position: relative;
     }
 
         .descr-bus .col-lg-2 p {
@@ -1068,3 +1069,12 @@ input.zipCode {
 .businessLocations {
     padding-left: 0 !important;
 }
+.AdvertiserLocationLogo {
+    position: absolute;
+    top: 15px;
+    display: none;
+}
+
+    .AdvertiserLocationLogo img {
+        max-width: 111px;
+    }
